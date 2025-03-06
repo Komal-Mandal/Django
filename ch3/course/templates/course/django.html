@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is the django course</h1>
+    <h3>name:{{name|upper}}</h3>
+    <h3>duration:{{du}}</h3>
+    <h3>seats:{{sea}}</h3>
+    <h3>desc:{{desc|truncatewords:3}}</h3>
+    <h3>desc:{{desc|upper|truncatewords:3}}</h3>
+    <h3>date and time</h3>
+    <h3>{{dt|date}}</h3>
+    <h3>{{dt|date:'D d M Y'}}</h3>
+    <h3>{{p1|floatformat:3}}</h3>
+    <h3>{{p2|floatformat:3}}</h3>
+    <h3>{{p3|floatformat:3}}</h3>
+    <h3>if tag</h3>
+    {% if nm and st %}
+    <h3>if tag is running</h3>
+    {% endif %}
+
+    {% if nm or st %}
+    <h3>if tag is running</h3>
+    {% endif %}
+
+    {% if not nm  %}
+    <h3>if tag is running</h3>
+    {% else %}
+    <h3>nm is not present</h3>
+    {% endif %}
+
+    {% if nm == "komal" %}
+    <h3>if tag is running</h3>
+    {% endif %}
+
+    <ul>
+        {% for name in names%}
+        <li>{{name}}</li>
+        {% endfor %}   
+    </ul>
+    
+
+<h3>{{stu}}</h3>
+<h3>{{stu.stu1}}</h3>
+
+{%for key,value in stu.items %}
+{{key}} - {{value}} <br>
+{% endfor %}
+</body>
+</html>
