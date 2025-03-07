@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+{% load static%}
+<title>{% block title %}Home{% endblock title%}</title>
+{% block corecss%}<link rel="stylesheet" href="{% static 'course/css/style.css'%}"> {% endblock corecss%}
+
+{% block content %}
+<h2>Home page</h2>
+{% endblock content %}
+
+{%block footer%} {{block.super}} this is the footer block {% endblock footer%}
