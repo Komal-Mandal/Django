@@ -1,0 +1,20 @@
+{
+  "name": "z_dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"npx @tailwindcss/cli -i ./input.css -o ../app1/static/app1/css/main.css  --watch",
+     "minify":"npx @tailwindcss/cli -i ./src/input.css -o ../app1/static/app1/css/main.css  --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.12",
+    "tailwindcss": "^4.0.12"
+  }
+}
