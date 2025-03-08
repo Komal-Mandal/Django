@@ -15,3 +15,12 @@ django-admin startproject ch1 .  # Create Django project in current folder
 python manage.py startapp app1  # Create Django app 'app1'
 
 python manage.py runserver  # Start development server
+
+
+manage.py makemigration
+
+python manage.py makemigrations
+
+python manage.py sqlmigrate student 0001
+
+python manage.py migrate
